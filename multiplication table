@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int number, i;
+
+    // Input the number for which you want to print the multiplication table
+    printf("Enter the number for which you want to print the multiplication table: ");
+    scanf("%d", &number);
+
+    // Print the multiplication table up to 10
+    printf("Multiplication table for %d:\n", number);
+    for (i = 1; i <= 10; i++) {
+        printf("%d x %d = %d\n", number, i, number * i);
+    }
+
+    return 0;
+}
